@@ -1,0 +1,1031 @@
+===== DATASET STATISTICS =====
+Documents: 21
+Total Tokens: 148967
+Vocabulary Size: 16566
+
+Training CBOW | dim=32 window=3 neg=5
+Training SkipGram | dim=32 window=3 neg=5
+Training CBOW | dim=32 window=3 neg=10
+Training SkipGram | dim=32 window=3 neg=10
+Training CBOW | dim=32 window=5 neg=5
+Training SkipGram | dim=32 window=5 neg=5
+Training CBOW | dim=32 window=5 neg=10
+Training SkipGram | dim=32 window=5 neg=10
+Training CBOW | dim=64 window=3 neg=5
+Training SkipGram | dim=64 window=3 neg=5
+Training CBOW | dim=64 window=3 neg=10
+Training SkipGram | dim=64 window=3 neg=10
+Training CBOW | dim=64 window=5 neg=5
+Training SkipGram | dim=64 window=5 neg=5
+Training CBOW | dim=64 window=5 neg=10
+Training SkipGram | dim=64 window=5 neg=10
+
+Model: cbow_32_3_5
+
+Word: research
+university 0.9999
+also 0.9999
+new 0.9999
+education 0.9998
+india 0.9998
+
+Word: student
+may 0.9998
+requirements 0.9998
+shall 0.9997
+semester 0.9997
+examination 0.9997
+
+Word: phd
+program 0.9998
+degree 0.9997
+computing 0.9995
+intelligence 0.9995
+data 0.9995
+
+Word: exam
+annalen 0.9746
+slip 0.9676
+catalyzed 0.9653
+fest 0.9648
+filled 0.9646
+
+
+Model: skipgram_32_3_5
+
+Word: research
+relevant 0.6894
+area 0.6876
+areas 0.6837
+selected 0.6629
+projects 0.6587
+
+Word: student
+may 0.8260
+registration 0.7804
+thesis 0.7760
+leave 0.7740
+senate 0.7739
+
+Word: phd
+cse 0.8455
+btech 0.8364
+tech 0.8296
+mtech 0.8165
+google 0.7917
+
+Word: exam
+exceed 0.9963
+temporary 0.9952
+holidays 0.9951
+casual 0.9948
+ordinarily 0.9947
+
+
+Model: cbow_32_3_10
+
+Word: research
+collaboration 0.9999
+activities 0.9999
+board 0.9999
+industry 0.9999
+committee 0.9998
+
+Word: student
+semester 0.9999
+grades 0.9998
+end 0.9998
+awarded 0.9998
+registration 0.9998
+
+Word: phd
+program 0.9998
+requirements 0.9996
+performance 0.9996
+understanding 0.9996
+minimum 0.9996
+
+Word: exam
+mahapatra 0.9917
+beginning 0.9908
+continuation 0.9900
+purification 0.9899
+convolutional 0.9899
+
+
+Model: skipgram_32_3_10
+
+Word: research
+areas 0.7017
+group 0.6838
+relevant 0.6751
+projects 0.6620
+interdisciplinary 0.6539
+
+Word: student
+thesis 0.7360
+supervisor 0.7188
+shall 0.7103
+examiners 0.7081
+attend 0.7052
+
+Word: phd
+btech 0.8445
+mtech 0.8151
+tech 0.8033
+cse 0.7880
+program 0.7794
+
+Word: exam
+alive 0.9946
+permissible 0.9928
+passed 0.9922
+prorating 0.9921
+indicate 0.9913
+
+
+Model: cbow_32_5_5
+
+Word: research
+also 0.9999
+new 0.9999
+university 0.9999
+development 0.9999
+digital 0.9999
+
+Word: student
+requirements 0.9999
+semester 0.9999
+academic 0.9999
+shall 0.9998
+registration 0.9998
+
+Word: phd
+degree 0.9997
+program 0.9997
+advanced 0.9996
+minimum 0.9995
+working 0.9995
+
+Word: exam
+lower 0.9702
+directed 0.9690
+dft 0.9661
+vinay 0.9659
+krishnan 0.9646
+
+
+Model: skipgram_32_5_5
+
+Word: research
+relevant 0.7238
+areas 0.7214
+work 0.7051
+teaching 0.6881
+interdisciplinary 0.6817
+
+Word: student
+may 0.7248
+recommendation 0.7149
+attend 0.7105
+examiners 0.6981
+awarded 0.6910
+
+Word: phd
+btech 0.7859
+intern 0.7739
+internship 0.7735
+fellowship 0.7612
+google 0.7548
+
+Word: exam
+permitted 0.9917
+exams 0.9893
+bonafide 0.9891
+missed 0.9883
+prorating 0.9883
+
+
+Model: cbow_32_5_10
+
+Word: research
+activities 0.9999
+india 0.9999
+society 0.9999
+university 0.9999
+cell 0.9999
+
+Word: student
+semester 0.9999
+shall 0.9999
+requirements 0.9999
+registration 0.9999
+examination 0.9999
+
+Word: phd
+program 0.9999
+intelligence 0.9998
+period 0.9998
+programs 0.9998
+least 0.9998
+
+Word: exam
+bhardwaj 0.9854
+integro 0.9848
+elastomer 0.9848
+finite 0.9848
+slit 0.9846
+
+
+Model: skipgram_32_5_10
+
+Word: research
+areas 0.8005
+interdisciplinary 0.7441
+interest 0.7410
+relevant 0.7208
+projects 0.7112
+
+Word: student
+parents 0.7817
+attend 0.7766
+sent 0.7762
+regularly 0.7745
+deregister 0.7740
+
+Word: phd
+btech 0.8278
+mtech 0.7529
+internship 0.7356
+laurels 0.7147
+mantor 0.7051
+
+Word: exam
+exams 0.9860
+diﬀerent 0.9853
+alive 0.9842
+stands 0.9832
+indicate 0.9824
+
+
+Model: cbow_64_3_5
+
+Word: research
+new 0.9999
+also 0.9999
+development 0.9999
+following 0.9999
+projects 0.9999
+
+Word: student
+requirements 0.9999
+shall 0.9999
+registration 0.9999
+examination 0.9999
+may 0.9998
+
+Word: phd
+program 0.9998
+degree 0.9997
+programs 0.9996
+requirements 0.9995
+minimum 0.9995
+
+Word: exam
+score 0.9787
+therapy 0.9784
+implement 0.9782
+namely 0.9781
+sampling 0.9781
+
+
+Model: skipgram_64_3_5
+
+Word: research
+group 0.7346
+area 0.6916
+areas 0.6913
+projects 0.6584
+interdisciplinary 0.6435
+
+Word: student
+registration 0.7782
+senate 0.7733
+leave 0.7535
+chairman 0.7493
+thesis 0.7444
+
+Word: phd
+cse 0.8409
+btech 0.8359
+mtech 0.8265
+head 0.8153
+coordinator 0.8024
+
+Word: exam
+excluding 0.9979
+indicate 0.9964
+recess 0.9964
+prorating 0.9962
+holidays 0.9958
+
+
+Model: cbow_64_3_10
+
+Word: research
+activities 0.9999
+industry 0.9999
+women 0.9999
+education 0.9999
+received 0.9999
+
+Word: student
+semester 0.9999
+shall 0.9998
+requirements 0.9998
+examination 0.9998
+awarded 0.9998
+
+Word: phd
+program 0.9998
+table 0.9998
+minimum 0.9997
+regular 0.9997
+credits 0.9997
+
+Word: exam
+called 0.9939
+payment 0.9938
+graded 0.9937
+student 0.9937
+register 0.9937
+
+
+Model: skipgram_64_3_10
+
+Word: research
+areas 0.7632
+area 0.7229
+relevant 0.6990
+interdisciplinary 0.6880
+group 0.6840
+
+Word: student
+shall 0.6985
+thesis 0.6877
+parents 0.6872
+leave 0.6779
+attend 0.6760
+
+Word: phd
+btech 0.7995
+inspire 0.7832
+mtech 0.7763
+tech 0.7761
+cse 0.7326
+
+Word: exam
+prorating 0.9929
+alive 0.9907
+exceed 0.9906
+even 0.9905
+excluding 0.9899
+
+
+Model: cbow_64_5_5
+
+Word: research
+development 1.0000
+new 1.0000
+also 0.9999
+digital 0.9999
+education 0.9999
+
+Word: student
+shall 0.9999
+may 0.9999
+requirements 0.9999
+academic 0.9999
+registration 0.9999
+
+Word: phd
+program 0.9998
+degree 0.9998
+courses 0.9997
+table 0.9997
+regular 0.9997
+
+Word: exam
+abir 0.9795
+composition 0.9794
+ﬁeld 0.9791
+limitations 0.9789
+importance 0.9788
+
+
+Model: skipgram_64_5_5
+
+Word: research
+areas 0.7024
+area 0.6915
+group 0.6824
+relevant 0.6783
+interest 0.6436
+
+Word: student
+attend 0.7017
+awarded 0.6979
+allowed 0.6912
+parents 0.6827
+leave 0.6775
+
+Word: phd
+btech 0.7973
+internship 0.7376
+pmrf 0.7341
+mtech 0.7145
+fellowship 0.7131
+
+Word: exam
+temporary 0.9946
+deficient 0.9938
+recess 0.9918
+fails 0.9917
+temporarily 0.9914
+
+
+Model: cbow_64_5_10
+
+Word: research
+development 1.0000
+university 1.0000
+also 1.0000
+new 1.0000
+society 1.0000
+
+Word: student
+registration 1.0000
+semester 0.9999
+shall 0.9999
+requirements 0.9999
+may 0.9999
+
+Word: phd
+program 0.9999
+degree 0.9999
+minimum 0.9998
+regular 0.9998
+courses 0.9998
+
+Word: exam
+newly 0.9905
+oﬀered 0.9903
+crowd 0.9901
+discrete 0.9899
+guest 0.9897
+
+
+Model: skipgram_64_5_10
+
+Word: research
+interdisciplinary 0.7105
+areas 0.6986
+interest 0.6885
+relevant 0.6781
+drafts 0.6781
+
+Word: student
+attend 0.7221
+allowed 0.7092
+parents 0.7024
+falls 0.6997
+regularly 0.6985
+
+Word: phd
+btech 0.7622
+internship 0.7444
+mtech 0.7256
+intern 0.7085
+pmrf 0.7051
+
+Word: exam
+temporary 0.9835
+normally 0.9827
+deficient 0.9816
+alive 0.9812
+recess 0.9810
+
+===== ANALOGY EXPERIMENTS =====
+
+Model: cbow_32_3_5
+
+undergraduate : btech :: postgraduate : ?
+days 0.9942
+pages 0.9942
+user 0.9942
+page 0.9941
+operating 0.9938
+
+btech : student :: phd : ?
+ethics 0.9966
+awarded 0.9965
+cyber 0.9965
+basis 0.9965
+career 0.9964
+
+research : faculty :: student : ?
+examination 0.9997
+one 0.9997
+may 0.9997
+shall 0.9996
+thesis 0.9996
+
+course : exam :: research : ?
+slip 0.9715
+annalen 0.9714
+agile 0.9663
+vibrant 0.9651
+sudipto 0.9641
+
+
+Model: skipgram_32_3_5
+
+undergraduate : btech :: postgraduate : ?
+placed 0.9595
+percentage 0.9561
+master 0.9530
+salaries 0.9464
+formally 0.9459
+
+btech : student :: phd : ?
+may 0.7004
+registration 0.5639
+leave 0.5563
+senate 0.5525
+thesis 0.5509
+
+research : faculty :: student : ?
+chairman 0.7439
+senate 0.7408
+awarded 0.7094
+granted 0.7070
+dean 0.6999
+
+course : exam :: research : ?
+present 0.7254
+scholars 0.7133
+area 0.7116
+consultancy 0.7062
+projects 0.7058
+
+
+Model: cbow_32_3_10
+
+undergraduate : btech :: postgraduate : ?
+hard 0.9980
+opportunity 0.9971
+analytical 0.9971
+degree 0.9971
+dual 0.9971
+
+btech : student :: phd : ?
+appear 0.9978
+absence 0.9977
+semester 0.9977
+letter 0.9977
+criteria 0.9977
+
+research : faculty :: student : ?
+leave 0.9996
+grades 0.9996
+shall 0.9996
+registration 0.9996
+thesis 0.9995
+
+course : exam :: research : ?
+mahapatra 0.9913
+kridansh 0.9905
+invention 0.9903
+written 0.9901
+sociology 0.9899
+
+
+Model: skipgram_32_3_10
+
+undergraduate : btech :: postgraduate : ?
+mba 0.9283
+mtech 0.9240
+percentage 0.9152
+ﬂagship 0.9144
+placed 0.9137
+
+btech : student :: phd : ?
+thesis 0.5297
+supervisor 0.5113
+expected 0.5088
+shall 0.5036
+may 0.4941
+
+research : faculty :: student : ?
+members 0.6522
+committee 0.6168
+shall 0.5927
+chairman 0.5801
+supervisor 0.5734
+
+course : exam :: research : ?
+present 0.7432
+advance 0.7095
+disciplinary 0.7059
+got 0.7052
+qualified 0.7045
+
+
+Model: cbow_32_5_5
+
+undergraduate : btech :: postgraduate : ?
+debasis 0.9938
+game 0.9938
+wireless 0.9933
+ritu 0.9933
+equation 0.9933
+
+btech : student :: phd : ?
+edu 0.9942
+carbon 0.9941
+magnetic 0.9941
+comprehensive 0.9939
+rapid 0.9938
+
+research : faculty :: student : ?
+shall 0.9998
+registration 0.9998
+academic 0.9998
+may 0.9997
+senate 0.9997
+
+course : exam :: research : ?
+lower 0.9686
+nominees 0.9661
+dft 0.9651
+vinay 0.9643
+directed 0.9642
+
+
+Model: skipgram_32_5_5
+
+undergraduate : btech :: postgraduate : ?
+intern 0.9511
+internship 0.9464
+mitacs 0.9084
+doctoral 0.9079
+ﬂagship 0.8993
+
+btech : student :: phd : ?
+may 0.6119
+inspire 0.5836
+fellowship 0.5191
+mentor 0.4820
+mantor 0.4814
+
+research : faculty :: student : ?
+chairman 0.6185
+outside 0.5893
+senate 0.5716
+inspire 0.5618
+shall 0.5584
+
+course : exam :: research : ?
+work 0.7752
+present 0.7256
+scholars 0.7138
+faqs 0.7107
+call 0.7094
+
+
+Model: cbow_32_5_10
+
+undergraduate : btech :: postgraduate : ?
+comparative 0.9955
+metallic 0.9951
+partial 0.9950
+trends 0.9950
+sessions 0.9950
+
+btech : student :: phd : ?
+card 0.9971
+consultation 0.9971
+force 0.9967
+assistantship 0.9967
+graduation 0.9967
+
+research : faculty :: student : ?
+shall 0.9998
+per 0.9998
+senate 0.9998
+must 0.9998
+academic 0.9998
+
+course : exam :: research : ?
+bhardwaj 0.9869
+integro 0.9849
+obtained 0.9844
+centrosome 0.9844
+elastomer 0.9844
+
+
+Model: skipgram_32_5_10
+
+undergraduate : btech :: postgraduate : ?
+mtech 0.9028
+internship 0.8765
+mba 0.8733
+codeforces 0.8604
+intern 0.8589
+
+btech : student :: phd : ?
+expected 0.6131
+reasons 0.6069
+appropriate 0.5913
+recommendation 0.5883
+attendance 0.5827
+
+research : faculty :: student : ?
+guidance 0.6162
+chairman 0.6003
+wellbeing 0.5982
+outside 0.5931
+pay 0.5930
+
+course : exam :: research : ?
+defense 0.7621
+present 0.7582
+duties 0.7544
+appointment 0.7539
+faqs 0.7489
+
+
+Model: cbow_64_3_5
+
+undergraduate : btech :: postgraduate : ?
+phd 0.9963
+degree 0.9962
+program 0.9962
+least 0.9961
+master 0.9961
+
+btech : student :: phd : ?
+shall 0.9979
+end 0.9978
+may 0.9978
+required 0.9978
+thesis 0.9978
+
+research : faculty :: student : ?
+academic 0.9998
+shall 0.9998
+may 0.9998
+registration 0.9997
+completed 0.9997
+
+course : exam :: research : ?
+plans 0.9805
+reservation 0.9791
+pradip 0.9788
+produce 0.9788
+followed 0.9788
+
+
+Model: skipgram_64_3_5
+
+undergraduate : btech :: postgraduate : ?
+placed 0.9748
+ﬂagship 0.9695
+suny 0.9684
+certification 0.9654
+internship 0.9645
+
+btech : student :: phd : ?
+may 0.6209
+thesis 0.5616
+registration 0.5581
+senate 0.5557
+awarded 0.5538
+
+research : faculty :: student : ?
+chairman 0.7286
+senate 0.7203
+dean 0.6885
+approval 0.6681
+leave 0.6606
+
+course : exam :: research : ?
+present 0.7529
+disciplinary 0.7293
+scholars 0.7293
+faculties 0.7251
+projects 0.7245
+
+
+Model: cbow_64_3_10
+
+undergraduate : btech :: postgraduate : ?
+chemical 0.9986
+phd 0.9986
+degree 0.9986
+mechanical 0.9986
+acs 0.9986
+
+btech : student :: phd : ?
+semester 0.9989
+register 0.9987
+awarded 0.9987
+leave 0.9987
+calendar 0.9987
+
+research : faculty :: student : ?
+shall 0.9997
+awarded 0.9997
+semester 0.9997
+register 0.9996
+examination 0.9996
+
+course : exam :: research : ?
+modify 0.9930
+august 0.9929
+actively 0.9927
+november 0.9927
+iitj 0.9926
+
+
+Model: skipgram_64_3_10
+
+undergraduate : btech :: postgraduate : ?
+placed 0.9325
+percentage 0.9300
+mba 0.9265
+ﬂagship 0.9240
+mitacs 0.9211
+
+btech : student :: phd : ?
+may 0.4986
+expected 0.4895
+das 0.4722
+debasis 0.4609
+mishra 0.4598
+
+research : faculty :: student : ?
+chairman 0.5454
+outside 0.5423
+shall 0.5421
+committee 0.5354
+registered 0.5337
+
+course : exam :: research : ?
+present 0.7153
+work 0.7043
+scholars 0.6960
+got 0.6835
+action 0.6809
+
+
+Model: cbow_64_5_5
+
+undergraduate : btech :: postgraduate : ?
+products 0.9960
+equivalent 0.9957
+dual 0.9957
+degree 0.9956
+microstructure 0.9955
+
+btech : student :: phd : ?
+work 0.9978
+shall 0.9977
+thesis 0.9977
+period 0.9976
+examination 0.9976
+
+research : faculty :: student : ?
+shall 0.9999
+academic 0.9999
+may 0.9998
+one 0.9998
+date 0.9998
+
+course : exam :: research : ?
+importance 0.9791
+abir 0.9784
+webinar 0.9782
+composition 0.9780
+automated 0.9779
+
+
+Model: skipgram_64_5_5
+
+undergraduate : btech :: postgraduate : ?
+internship 0.9235
+intern 0.9165
+ﬂagship 0.9086
+codeforces 0.9079
+doctoral 0.9052
+
+btech : student :: phd : ?
+leave 0.4627
+inspire 0.4608
+awarded 0.4566
+reasons 0.4557
+best 0.4495
+
+research : faculty :: student : ?
+chairman 0.5643
+outside 0.5335
+wellbeing 0.5307
+internships 0.5255
+members 0.5255
+
+course : exam :: research : ?
+present 0.7218
+stage 0.7008
+proposal 0.6962
+work 0.6787
+advance 0.6778
+
+
+Model: cbow_64_5_10
+
+undergraduate : btech :: postgraduate : ?
+graphics 0.9978
+phd 0.9977
+programming 0.9977
+deep 0.9977
+explain 0.9977
+
+btech : student :: phd : ?
+take 0.9986
+rohan 0.9986
+climate 0.9985
+conduct 0.9984
+currently 0.9984
+
+research : faculty :: student : ?
+shall 0.9999
+academic 0.9999
+senate 0.9999
+registration 0.9999
+thesis 0.9999
+
+course : exam :: research : ?
+newly 0.9902
+verification 0.9902
+organizing 0.9894
+guest 0.9892
+researchers 0.9891
+
+
+Model: skipgram_64_5_10
+
+undergraduate : btech :: postgraduate : ?
+mtech 0.8954
+internship 0.8760
+intern 0.8697
+amd 0.8628
+mitacs 0.8615
+
+btech : student :: phd : ?
+inspire 0.5781
+appeal 0.5149
+reasons 0.5055
+outside 0.5046
+poor 0.4902
+
+research : faculty :: student : ?
+members 0.5716
+inspire 0.5531
+phd 0.5159
+outside 0.5142
+mentor 0.5098
+
+course : exam :: research : ?
+proposal 0.7244
+defense 0.7165
+selecting 0.7123
+present 0.7094
+duties 0.6996
+
+===== TASK 4: VISUALIZATION =====
+Visualizing model: cbow_32_3_5
+Visualizing model: skipgram_32_3_5
+Visualizing model: cbow_32_3_10
+Visualizing model: skipgram_32_3_10
+Visualizing model: cbow_32_5_5
+Visualizing model: skipgram_32_5_5
+Visualizing model: cbow_32_5_10
+Visualizing model: skipgram_32_5_10
+Visualizing model: cbow_64_3_5
+Visualizing model: skipgram_64_3_5
+Visualizing model: cbow_64_3_10
+Visualizing model: skipgram_64_3_10
+Visualizing model: cbow_64_5_5
+Visualizing model: skipgram_64_5_5
+Visualizing model: cbow_64_5_10
+Visualizing model: skipgram_64_5_10
