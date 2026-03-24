@@ -1,0 +1,1464 @@
+DATASET STATISTICS
+Documents: 21
+Total Tokens: 148967
+Vocabulary Size: 16566
+
+TRAINING GENSIM MODELS
+Training Gensim CBOW | dim = 32, window size = 3, negatives = 5
+collecting all words and their counts
+PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+collected 16566 word types from a corpus of 148967 raw words and 21 sentences
+Creating a fresh vocabulary
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 retains 16566 unique words (100.00% of original 16566, drops 0)', 'datetime': '2026-03-24T23:12:12.998520', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 leaves 148967 word corpus (100.00% of original 148967, drops 0)', 'datetime': '2026-03-24T23:12:13.001073', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+deleting the raw counts dictionary of 16566 items
+sample=0.001 downsamples 28 most-common words
+Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 143708.4024090274 word corpus (96.5%% of prior 148967)', 'datetime': '2026-03-24T23:12:13.039995', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+estimated required memory for 16566 words and 32 dimensions: 12523896 bytes
+resetting layer weights
+Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2026-03-24T23:12:13.125555', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'build_vocab'}
+Word2Vec lifecycle event {'msg': 'training model with 4 workers on 16566 vocabulary and 32 features, using sg=0 hs=0 sample=0.001 negative=5 window=3 shrink_windows=True', 'datetime': '2026-03-24T23:12:13.125901', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+EPOCH 0: training on 148967 raw words (62902 effective words) took 0.0s, 3066531 effective words/s
+EPOCH 1: training on 148967 raw words (62896 effective words) took 0.0s, 3092422 effective words/s
+EPOCH 2: training on 148967 raw words (62923 effective words) took 0.0s, 3021976 effective words/s
+EPOCH 3: training on 148967 raw words (62857 effective words) took 0.0s, 3055642 effective words/s
+EPOCH 4: training on 148967 raw words (62916 effective words) took 0.0s, 3151400 effective words/s
+EPOCH 5: training on 148967 raw words (62897 effective words) took 0.0s, 3237563 effective words/s
+EPOCH 6: training on 148967 raw words (62905 effective words) took 0.0s, 2693983 effective words/s
+EPOCH 7: training on 148967 raw words (62881 effective words) took 0.0s, 2801930 effective words/s
+EPOCH 8: training on 148967 raw words (62889 effective words) took 0.0s, 2893148 effective words/s
+EPOCH 9: training on 148967 raw words (62865 effective words) took 0.0s, 3304315 effective words/s
+Word2Vec lifecycle event {'msg': 'training on 1489670 raw words (628931 effective words) took 0.2s, 2872010 effective words/s', 'datetime': '2026-03-24T23:12:13.344986', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+Word2Vec lifecycle event {'params': 'Word2Vec<vocab=16566, vector_size=32, alpha=0.025>', 'datetime': '2026-03-24T23:12:13.345108', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'created'}
+Training Gensim Skip-Gram | dim = 32, window = 3, neg = 5
+collecting all words and their counts
+PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+collected 16566 word types from a corpus of 148967 raw words and 21 sentences
+Creating a fresh vocabulary
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 retains 16566 unique words (100.00% of original 16566, drops 0)', 'datetime': '2026-03-24T23:12:13.384661', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 leaves 148967 word corpus (100.00% of original 148967, drops 0)', 'datetime': '2026-03-24T23:12:13.384931', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+deleting the raw counts dictionary of 16566 items
+sample=0.001 downsamples 28 most-common words
+Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 143708.4024090274 word corpus (96.5%% of prior 148967)', 'datetime': '2026-03-24T23:12:13.424721', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+estimated required memory for 16566 words and 32 dimensions: 12523896 bytes
+resetting layer weights
+Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2026-03-24T23:12:13.504999', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'build_vocab'}
+Word2Vec lifecycle event {'msg': 'training model with 4 workers on 16566 vocabulary and 32 features, using sg=1 hs=0 sample=0.001 negative=5 window=3 shrink_windows=True', 'datetime': '2026-03-24T23:12:13.505158', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+EPOCH 0: training on 148967 raw words (62902 effective words) took 0.0s, 1283250 effective words/s
+EPOCH 1: training on 148967 raw words (62896 effective words) took 0.1s, 1236981 effective words/s
+EPOCH 2: training on 148967 raw words (62890 effective words) took 0.0s, 1350961 effective words/s
+EPOCH 3: training on 148967 raw words (62825 effective words) took 0.1s, 1138864 effective words/s
+EPOCH 4: training on 148967 raw words (62922 effective words) took 0.0s, 1321996 effective words/s
+EPOCH 5: training on 148967 raw words (62914 effective words) took 0.0s, 1266425 effective words/s
+EPOCH 6: training on 148967 raw words (62885 effective words) took 0.1s, 1168124 effective words/s
+EPOCH 7: training on 148967 raw words (62880 effective words) took 0.0s, 1348797 effective words/s
+EPOCH 8: training on 148967 raw words (62870 effective words) took 0.0s, 1323418 effective words/s
+EPOCH 9: training on 148967 raw words (62877 effective words) took 0.0s, 1346695 effective words/s
+Word2Vec lifecycle event {'msg': 'training on 1489670 raw words (628861 effective words) took 0.5s, 1247806 effective words/s', 'datetime': '2026-03-24T23:12:14.009215', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+Word2Vec lifecycle event {'params': 'Word2Vec<vocab=16566, vector_size=32, alpha=0.025>', 'datetime': '2026-03-24T23:12:14.009324', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'created'}
+Training Gensim CBOW | dim = 32, window size = 3, negatives = 10
+collecting all words and their counts
+PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+collected 16566 word types from a corpus of 148967 raw words and 21 sentences
+Creating a fresh vocabulary
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 retains 16566 unique words (100.00% of original 16566, drops 0)', 'datetime': '2026-03-24T23:12:14.051007', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 leaves 148967 word corpus (100.00% of original 148967, drops 0)', 'datetime': '2026-03-24T23:12:14.051381', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+deleting the raw counts dictionary of 16566 items
+sample=0.001 downsamples 28 most-common words
+Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 143708.4024090274 word corpus (96.5%% of prior 148967)', 'datetime': '2026-03-24T23:12:14.090887', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+estimated required memory for 16566 words and 32 dimensions: 12523896 bytes
+resetting layer weights
+Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2026-03-24T23:12:14.171926', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'build_vocab'}
+Word2Vec lifecycle event {'msg': 'training model with 4 workers on 16566 vocabulary and 32 features, using sg=0 hs=0 sample=0.001 negative=10 window=3 shrink_windows=True', 'datetime': '2026-03-24T23:12:14.172115', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+EPOCH 0: training on 148967 raw words (62902 effective words) took 0.0s, 2130563 effective words/s
+EPOCH 1: training on 148967 raw words (62896 effective words) took 0.0s, 2108448 effective words/s
+EPOCH 2: training on 148967 raw words (62900 effective words) took 0.0s, 2210897 effective words/s
+EPOCH 3: training on 148967 raw words (62898 effective words) took 0.0s, 1685787 effective words/s
+EPOCH 4: training on 148967 raw words (62911 effective words) took 0.0s, 1899517 effective words/s
+EPOCH 5: training on 148967 raw words (62889 effective words) took 0.0s, 2280630 effective words/s
+EPOCH 6: training on 148967 raw words (62912 effective words) took 0.0s, 2197130 effective words/s
+EPOCH 7: training on 148967 raw words (62917 effective words) took 0.0s, 2225730 effective words/s
+EPOCH 8: training on 148967 raw words (62862 effective words) took 0.0s, 2071579 effective words/s
+EPOCH 9: training on 148967 raw words (62921 effective words) took 0.0s, 2193046 effective words/s
+Word2Vec lifecycle event {'msg': 'training on 1489670 raw words (629008 effective words) took 0.3s, 2019037 effective words/s', 'datetime': '2026-03-24T23:12:14.483727', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+Word2Vec lifecycle event {'params': 'Word2Vec<vocab=16566, vector_size=32, alpha=0.025>', 'datetime': '2026-03-24T23:12:14.483846', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'created'}
+Training Gensim Skip-Gram | dim = 32, window = 3, neg = 10
+collecting all words and their counts
+PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+collected 16566 word types from a corpus of 148967 raw words and 21 sentences
+Creating a fresh vocabulary
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 retains 16566 unique words (100.00% of original 16566, drops 0)', 'datetime': '2026-03-24T23:12:14.520878', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 leaves 148967 word corpus (100.00% of original 148967, drops 0)', 'datetime': '2026-03-24T23:12:14.521188', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+deleting the raw counts dictionary of 16566 items
+sample=0.001 downsamples 28 most-common words
+Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 143708.4024090274 word corpus (96.5%% of prior 148967)', 'datetime': '2026-03-24T23:12:14.561255', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+estimated required memory for 16566 words and 32 dimensions: 12523896 bytes
+resetting layer weights
+Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2026-03-24T23:12:14.640057', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'build_vocab'}
+Word2Vec lifecycle event {'msg': 'training model with 4 workers on 16566 vocabulary and 32 features, using sg=1 hs=0 sample=0.001 negative=10 window=3 shrink_windows=True', 'datetime': '2026-03-24T23:12:14.640227', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+EPOCH 0: training on 148967 raw words (62902 effective words) took 0.1s, 780668 effective words/s
+EPOCH 1: training on 148967 raw words (62861 effective words) took 0.1s, 721113 effective words/s
+EPOCH 2: training on 148967 raw words (62877 effective words) took 0.1s, 767183 effective words/s
+EPOCH 3: training on 148967 raw words (62844 effective words) took 0.1s, 770650 effective words/s
+EPOCH 4: training on 148967 raw words (62889 effective words) took 0.1s, 603072 effective words/s
+EPOCH 5: training on 148967 raw words (62928 effective words) took 0.1s, 550645 effective words/s
+EPOCH 6: training on 148967 raw words (62863 effective words) took 0.1s, 733593 effective words/s
+EPOCH 7: training on 148967 raw words (62906 effective words) took 0.1s, 684773 effective words/s
+EPOCH 8: training on 148967 raw words (62830 effective words) took 0.1s, 787110 effective words/s
+EPOCH 9: training on 148967 raw words (62894 effective words) took 0.1s, 779710 effective words/s
+Word2Vec lifecycle event {'msg': 'training on 1489670 raw words (628794 effective words) took 0.9s, 699570 effective words/s', 'datetime': '2026-03-24T23:12:15.539132', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+Word2Vec lifecycle event {'params': 'Word2Vec<vocab=16566, vector_size=32, alpha=0.025>', 'datetime': '2026-03-24T23:12:15.539237', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'created'}
+Training Gensim CBOW | dim = 32, window size = 5, negatives = 5
+collecting all words and their counts
+PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+collected 16566 word types from a corpus of 148967 raw words and 21 sentences
+Creating a fresh vocabulary
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 retains 16566 unique words (100.00% of original 16566, drops 0)', 'datetime': '2026-03-24T23:12:15.579641', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 leaves 148967 word corpus (100.00% of original 148967, drops 0)', 'datetime': '2026-03-24T23:12:15.580040', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+deleting the raw counts dictionary of 16566 items
+sample=0.001 downsamples 28 most-common words
+Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 143708.4024090274 word corpus (96.5%% of prior 148967)', 'datetime': '2026-03-24T23:12:15.617794', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+estimated required memory for 16566 words and 32 dimensions: 12523896 bytes
+resetting layer weights
+Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2026-03-24T23:12:15.695162', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'build_vocab'}
+Word2Vec lifecycle event {'msg': 'training model with 4 workers on 16566 vocabulary and 32 features, using sg=0 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2026-03-24T23:12:15.695337', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+EPOCH 0: training on 148967 raw words (62852 effective words) took 0.0s, 2843045 effective words/s
+EPOCH 1: training on 148967 raw words (62933 effective words) took 0.0s, 3186489 effective words/s
+EPOCH 2: training on 148967 raw words (62901 effective words) took 0.0s, 2687094 effective words/s
+EPOCH 3: training on 148967 raw words (62889 effective words) took 0.0s, 3020517 effective words/s
+EPOCH 4: training on 148967 raw words (62926 effective words) took 0.0s, 2378423 effective words/s
+EPOCH 5: training on 148967 raw words (62896 effective words) took 0.0s, 2883837 effective words/s
+EPOCH 6: training on 148967 raw words (62911 effective words) took 0.0s, 3064134 effective words/s
+EPOCH 7: training on 148967 raw words (62864 effective words) took 0.0s, 3042405 effective words/s
+EPOCH 8: training on 148967 raw words (62868 effective words) took 0.0s, 2827791 effective words/s
+EPOCH 9: training on 148967 raw words (62898 effective words) took 0.0s, 2891198 effective words/s
+Word2Vec lifecycle event {'msg': 'training on 1489670 raw words (628938 effective words) took 0.2s, 2732183 effective words/s', 'datetime': '2026-03-24T23:12:15.925624', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+Word2Vec lifecycle event {'params': 'Word2Vec<vocab=16566, vector_size=32, alpha=0.025>', 'datetime': '2026-03-24T23:12:15.925801', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'created'}
+Training Gensim Skip-Gram | dim = 32, window = 5, neg = 5
+collecting all words and their counts
+PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+collected 16566 word types from a corpus of 148967 raw words and 21 sentences
+Creating a fresh vocabulary
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 retains 16566 unique words (100.00% of original 16566, drops 0)', 'datetime': '2026-03-24T23:12:15.981976', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 leaves 148967 word corpus (100.00% of original 148967, drops 0)', 'datetime': '2026-03-24T23:12:15.982302', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+deleting the raw counts dictionary of 16566 items
+sample=0.001 downsamples 28 most-common words
+Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 143708.4024090274 word corpus (96.5%% of prior 148967)', 'datetime': '2026-03-24T23:12:16.022792', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+estimated required memory for 16566 words and 32 dimensions: 12523896 bytes
+resetting layer weights
+Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2026-03-24T23:12:16.110523', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'build_vocab'}
+Word2Vec lifecycle event {'msg': 'training model with 4 workers on 16566 vocabulary and 32 features, using sg=1 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2026-03-24T23:12:16.110745', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+EPOCH 0: training on 148967 raw words (62912 effective words) took 0.1s, 944706 effective words/s
+EPOCH 1: training on 148967 raw words (62860 effective words) took 0.1s, 963224 effective words/s
+EPOCH 2: training on 148967 raw words (62869 effective words) took 0.1s, 876249 effective words/s
+EPOCH 3: training on 148967 raw words (62879 effective words) took 0.1s, 936774 effective words/s
+EPOCH 4: training on 148967 raw words (62855 effective words) took 0.1s, 950140 effective words/s
+EPOCH 5: training on 148967 raw words (62916 effective words) took 0.1s, 931043 effective words/s
+EPOCH 6: training on 148967 raw words (62897 effective words) took 0.1s, 642612 effective words/s
+EPOCH 7: training on 148967 raw words (62892 effective words) took 0.1s, 931125 effective words/s
+EPOCH 8: training on 148967 raw words (62864 effective words) took 0.1s, 877813 effective words/s
+EPOCH 9: training on 148967 raw words (62936 effective words) took 0.1s, 790845 effective words/s
+Word2Vec lifecycle event {'msg': 'training on 1489670 raw words (628880 effective words) took 0.7s, 857198 effective words/s', 'datetime': '2026-03-24T23:12:16.844479', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+Word2Vec lifecycle event {'params': 'Word2Vec<vocab=16566, vector_size=32, alpha=0.025>', 'datetime': '2026-03-24T23:12:16.844580', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'created'}
+Training Gensim CBOW | dim = 32, window size = 5, negatives = 10
+collecting all words and their counts
+PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+collected 16566 word types from a corpus of 148967 raw words and 21 sentences
+Creating a fresh vocabulary
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 retains 16566 unique words (100.00% of original 16566, drops 0)', 'datetime': '2026-03-24T23:12:16.883098', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 leaves 148967 word corpus (100.00% of original 148967, drops 0)', 'datetime': '2026-03-24T23:12:16.883343', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+deleting the raw counts dictionary of 16566 items
+sample=0.001 downsamples 28 most-common words
+Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 143708.4024090274 word corpus (96.5%% of prior 148967)', 'datetime': '2026-03-24T23:12:16.921475', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+estimated required memory for 16566 words and 32 dimensions: 12523896 bytes
+resetting layer weights
+Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2026-03-24T23:12:16.999855', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'build_vocab'}
+Word2Vec lifecycle event {'msg': 'training model with 4 workers on 16566 vocabulary and 32 features, using sg=0 hs=0 sample=0.001 negative=10 window=5 shrink_windows=True', 'datetime': '2026-03-24T23:12:17.000052', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+EPOCH 0: training on 148967 raw words (62912 effective words) took 0.0s, 1929437 effective words/s
+EPOCH 1: training on 148967 raw words (62891 effective words) took 0.0s, 2132062 effective words/s
+EPOCH 2: training on 148967 raw words (62904 effective words) took 0.0s, 2122859 effective words/s
+EPOCH 3: training on 148967 raw words (62890 effective words) took 0.0s, 2126891 effective words/s
+EPOCH 4: training on 148967 raw words (62895 effective words) took 0.0s, 2244258 effective words/s
+EPOCH 5: training on 148967 raw words (62858 effective words) took 0.0s, 1931372 effective words/s
+EPOCH 6: training on 148967 raw words (62879 effective words) took 0.0s, 2275127 effective words/s
+EPOCH 7: training on 148967 raw words (62903 effective words) took 0.0s, 2257441 effective words/s
+EPOCH 8: training on 148967 raw words (62912 effective words) took 0.0s, 1992026 effective words/s
+EPOCH 9: training on 148967 raw words (62911 effective words) took 0.0s, 1581421 effective words/s
+Word2Vec lifecycle event {'msg': 'training on 1489670 raw words (628955 effective words) took 0.3s, 1968629 effective words/s', 'datetime': '2026-03-24T23:12:17.319624', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+Word2Vec lifecycle event {'params': 'Word2Vec<vocab=16566, vector_size=32, alpha=0.025>', 'datetime': '2026-03-24T23:12:17.319710', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'created'}
+Training Gensim Skip-Gram | dim = 32, window = 5, neg = 10
+collecting all words and their counts
+PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+collected 16566 word types from a corpus of 148967 raw words and 21 sentences
+Creating a fresh vocabulary
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 retains 16566 unique words (100.00% of original 16566, drops 0)', 'datetime': '2026-03-24T23:12:17.358878', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 leaves 148967 word corpus (100.00% of original 148967, drops 0)', 'datetime': '2026-03-24T23:12:17.359120', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+deleting the raw counts dictionary of 16566 items
+sample=0.001 downsamples 28 most-common words
+Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 143708.4024090274 word corpus (96.5%% of prior 148967)', 'datetime': '2026-03-24T23:12:17.398056', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+estimated required memory for 16566 words and 32 dimensions: 12523896 bytes
+resetting layer weights
+Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2026-03-24T23:12:17.477658', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'build_vocab'}
+Word2Vec lifecycle event {'msg': 'training model with 4 workers on 16566 vocabulary and 32 features, using sg=1 hs=0 sample=0.001 negative=10 window=5 shrink_windows=True', 'datetime': '2026-03-24T23:12:17.477815', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+EPOCH 0: training on 148967 raw words (62934 effective words) took 0.1s, 448694 effective words/s
+EPOCH 1: training on 148967 raw words (62895 effective words) took 0.1s, 505058 effective words/s
+EPOCH 2: training on 148967 raw words (62920 effective words) took 0.2s, 413614 effective words/s
+EPOCH 3: training on 148967 raw words (62908 effective words) took 0.1s, 430686 effective words/s
+EPOCH 4: training on 148967 raw words (62834 effective words) took 0.1s, 533331 effective words/s
+EPOCH 5: training on 148967 raw words (62914 effective words) took 0.1s, 516072 effective words/s
+EPOCH 6: training on 148967 raw words (62913 effective words) took 0.1s, 433736 effective words/s
+EPOCH 7: training on 148967 raw words (62864 effective words) took 0.1s, 524724 effective words/s
+EPOCH 8: training on 148967 raw words (62868 effective words) took 0.1s, 495794 effective words/s
+EPOCH 9: training on 148967 raw words (62933 effective words) took 0.1s, 482728 effective words/s
+Word2Vec lifecycle event {'msg': 'training on 1489670 raw words (628983 effective words) took 1.3s, 471032 effective words/s', 'datetime': '2026-03-24T23:12:18.813211', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+Word2Vec lifecycle event {'params': 'Word2Vec<vocab=16566, vector_size=32, alpha=0.025>', 'datetime': '2026-03-24T23:12:18.813368', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'created'}
+Training Gensim CBOW | dim = 64, window size = 3, negatives = 5
+collecting all words and their counts
+PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+collected 16566 word types from a corpus of 148967 raw words and 21 sentences
+Creating a fresh vocabulary
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 retains 16566 unique words (100.00% of original 16566, drops 0)', 'datetime': '2026-03-24T23:12:18.854115', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 leaves 148967 word corpus (100.00% of original 148967, drops 0)', 'datetime': '2026-03-24T23:12:18.854485', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+deleting the raw counts dictionary of 16566 items
+sample=0.001 downsamples 28 most-common words
+Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 143708.4024090274 word corpus (96.5%% of prior 148967)', 'datetime': '2026-03-24T23:12:18.895748', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+estimated required memory for 16566 words and 64 dimensions: 16764792 bytes
+resetting layer weights
+Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2026-03-24T23:12:18.981798', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'build_vocab'}
+Word2Vec lifecycle event {'msg': 'training model with 4 workers on 16566 vocabulary and 64 features, using sg=0 hs=0 sample=0.001 negative=5 window=3 shrink_windows=True', 'datetime': '2026-03-24T23:12:18.982029', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+EPOCH 0: training on 148967 raw words (62902 effective words) took 0.0s, 2743311 effective words/s
+EPOCH 1: training on 148967 raw words (62896 effective words) took 0.0s, 2450469 effective words/s
+EPOCH 2: training on 148967 raw words (62897 effective words) took 0.0s, 2566225 effective words/s
+EPOCH 3: training on 148967 raw words (62881 effective words) took 0.0s, 2543112 effective words/s
+EPOCH 4: training on 148967 raw words (62911 effective words) took 0.0s, 2902902 effective words/s
+EPOCH 5: training on 148967 raw words (62867 effective words) took 0.0s, 2731019 effective words/s
+EPOCH 6: training on 148967 raw words (62875 effective words) took 0.0s, 2724752 effective words/s
+EPOCH 7: training on 148967 raw words (62922 effective words) took 0.0s, 2593682 effective words/s
+EPOCH 8: training on 148967 raw words (62888 effective words) took 0.0s, 2770255 effective words/s
+EPOCH 9: training on 148967 raw words (62829 effective words) took 0.0s, 2485694 effective words/s
+Word2Vec lifecycle event {'msg': 'training on 1489670 raw words (628868 effective words) took 0.2s, 2539438 effective words/s', 'datetime': '2026-03-24T23:12:19.229750', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+Word2Vec lifecycle event {'params': 'Word2Vec<vocab=16566, vector_size=64, alpha=0.025>', 'datetime': '2026-03-24T23:12:19.229847', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'created'}
+Training Gensim Skip-Gram | dim = 64, window = 3, neg = 5
+collecting all words and their counts
+PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+collected 16566 word types from a corpus of 148967 raw words and 21 sentences
+Creating a fresh vocabulary
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 retains 16566 unique words (100.00% of original 16566, drops 0)', 'datetime': '2026-03-24T23:12:19.275240', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 leaves 148967 word corpus (100.00% of original 148967, drops 0)', 'datetime': '2026-03-24T23:12:19.275530', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+deleting the raw counts dictionary of 16566 items
+sample=0.001 downsamples 28 most-common words
+Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 143708.4024090274 word corpus (96.5%% of prior 148967)', 'datetime': '2026-03-24T23:12:19.320080', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+estimated required memory for 16566 words and 64 dimensions: 16764792 bytes
+resetting layer weights
+Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2026-03-24T23:12:19.405136', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'build_vocab'}
+Word2Vec lifecycle event {'msg': 'training model with 4 workers on 16566 vocabulary and 64 features, using sg=1 hs=0 sample=0.001 negative=5 window=3 shrink_windows=True', 'datetime': '2026-03-24T23:12:19.405384', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+EPOCH 0: training on 148967 raw words (62871 effective words) took 0.1s, 1086816 effective words/s
+EPOCH 1: training on 148967 raw words (62930 effective words) took 0.1s, 1130093 effective words/s
+EPOCH 2: training on 148967 raw words (62869 effective words) took 0.1s, 1017634 effective words/s
+EPOCH 3: training on 148967 raw words (62849 effective words) took 0.1s, 1132935 effective words/s
+EPOCH 4: training on 148967 raw words (62920 effective words) took 0.1s, 1115908 effective words/s
+EPOCH 5: training on 148967 raw words (62869 effective words) took 0.1s, 1005252 effective words/s
+EPOCH 6: training on 148967 raw words (62850 effective words) took 0.1s, 1100947 effective words/s
+EPOCH 7: training on 148967 raw words (62857 effective words) took 0.1s, 1016586 effective words/s
+EPOCH 8: training on 148967 raw words (62911 effective words) took 0.1s, 1151155 effective words/s
+EPOCH 9: training on 148967 raw words (62909 effective words) took 0.1s, 1138448 effective words/s
+Word2Vec lifecycle event {'msg': 'training on 1489670 raw words (628835 effective words) took 0.6s, 1067481 effective words/s', 'datetime': '2026-03-24T23:12:19.994538', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+Word2Vec lifecycle event {'params': 'Word2Vec<vocab=16566, vector_size=64, alpha=0.025>', 'datetime': '2026-03-24T23:12:19.994703', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'created'}
+Training Gensim CBOW | dim = 64, window size = 3, negatives = 10
+collecting all words and their counts
+PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+collected 16566 word types from a corpus of 148967 raw words and 21 sentences
+Creating a fresh vocabulary
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 retains 16566 unique words (100.00% of original 16566, drops 0)', 'datetime': '2026-03-24T23:12:20.034586', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 leaves 148967 word corpus (100.00% of original 148967, drops 0)', 'datetime': '2026-03-24T23:12:20.034825', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+deleting the raw counts dictionary of 16566 items
+sample=0.001 downsamples 28 most-common words
+Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 143708.4024090274 word corpus (96.5%% of prior 148967)', 'datetime': '2026-03-24T23:12:20.074101', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+estimated required memory for 16566 words and 64 dimensions: 16764792 bytes
+resetting layer weights
+Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2026-03-24T23:12:20.159306', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'build_vocab'}
+Word2Vec lifecycle event {'msg': 'training model with 4 workers on 16566 vocabulary and 64 features, using sg=0 hs=0 sample=0.001 negative=10 window=3 shrink_windows=True', 'datetime': '2026-03-24T23:12:20.159525', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+EPOCH 0: training on 148967 raw words (62908 effective words) took 0.0s, 1872078 effective words/s
+EPOCH 1: training on 148967 raw words (62868 effective words) took 0.0s, 1722659 effective words/s
+EPOCH 2: training on 148967 raw words (62889 effective words) took 0.0s, 1799950 effective words/s
+EPOCH 3: training on 148967 raw words (62849 effective words) took 0.0s, 1781655 effective words/s
+EPOCH 4: training on 148967 raw words (62885 effective words) took 0.0s, 1920053 effective words/s
+EPOCH 5: training on 148967 raw words (62908 effective words) took 0.0s, 1985448 effective words/s
+EPOCH 6: training on 148967 raw words (62902 effective words) took 0.0s, 1741395 effective words/s
+EPOCH 7: training on 148967 raw words (62936 effective words) took 0.0s, 1926075 effective words/s
+EPOCH 8: training on 148967 raw words (62924 effective words) took 0.0s, 1741954 effective words/s
+EPOCH 9: training on 148967 raw words (62822 effective words) took 0.0s, 1920575 effective words/s
+Word2Vec lifecycle event {'msg': 'training on 1489670 raw words (628891 effective words) took 0.4s, 1786964 effective words/s', 'datetime': '2026-03-24T23:12:20.511555', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+Word2Vec lifecycle event {'params': 'Word2Vec<vocab=16566, vector_size=64, alpha=0.025>', 'datetime': '2026-03-24T23:12:20.511753', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'created'}
+Training Gensim Skip-Gram | dim = 64, window = 3, neg = 10
+collecting all words and their counts
+PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+collected 16566 word types from a corpus of 148967 raw words and 21 sentences
+Creating a fresh vocabulary
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 retains 16566 unique words (100.00% of original 16566, drops 0)', 'datetime': '2026-03-24T23:12:20.552522', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 leaves 148967 word corpus (100.00% of original 148967, drops 0)', 'datetime': '2026-03-24T23:12:20.552764', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+deleting the raw counts dictionary of 16566 items
+sample=0.001 downsamples 28 most-common words
+Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 143708.4024090274 word corpus (96.5%% of prior 148967)', 'datetime': '2026-03-24T23:12:20.593213', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+estimated required memory for 16566 words and 64 dimensions: 16764792 bytes
+resetting layer weights
+Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2026-03-24T23:12:20.676273', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'build_vocab'}
+Word2Vec lifecycle event {'msg': 'training model with 4 workers on 16566 vocabulary and 64 features, using sg=1 hs=0 sample=0.001 negative=10 window=3 shrink_windows=True', 'datetime': '2026-03-24T23:12:20.676538', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+EPOCH 0: training on 148967 raw words (62902 effective words) took 0.1s, 660780 effective words/s
+EPOCH 1: training on 148967 raw words (62894 effective words) took 0.1s, 656244 effective words/s
+EPOCH 2: training on 148967 raw words (62888 effective words) took 0.1s, 587228 effective words/s
+EPOCH 3: training on 148967 raw words (62877 effective words) took 0.1s, 637111 effective words/s
+EPOCH 4: training on 148967 raw words (62854 effective words) took 0.1s, 676414 effective words/s
+EPOCH 5: training on 148967 raw words (62873 effective words) took 0.1s, 668855 effective words/s
+EPOCH 6: training on 148967 raw words (62866 effective words) took 0.1s, 587547 effective words/s
+EPOCH 7: training on 148967 raw words (62906 effective words) took 0.1s, 595739 effective words/s
+EPOCH 8: training on 148967 raw words (62859 effective words) took 0.1s, 636859 effective words/s
+EPOCH 9: training on 148967 raw words (62909 effective words) took 0.1s, 655072 effective words/s
+Word2Vec lifecycle event {'msg': 'training on 1489670 raw words (628828 effective words) took 1.0s, 627637 effective words/s', 'datetime': '2026-03-24T23:12:21.678522', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+Word2Vec lifecycle event {'params': 'Word2Vec<vocab=16566, vector_size=64, alpha=0.025>', 'datetime': '2026-03-24T23:12:21.678688', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'created'}
+Training Gensim CBOW | dim = 64, window size = 5, negatives = 5
+collecting all words and their counts
+PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+collected 16566 word types from a corpus of 148967 raw words and 21 sentences
+Creating a fresh vocabulary
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 retains 16566 unique words (100.00% of original 16566, drops 0)', 'datetime': '2026-03-24T23:12:21.718472', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 leaves 148967 word corpus (100.00% of original 148967, drops 0)', 'datetime': '2026-03-24T23:12:21.718772', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+deleting the raw counts dictionary of 16566 items
+sample=0.001 downsamples 28 most-common words
+Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 143708.4024090274 word corpus (96.5%% of prior 148967)', 'datetime': '2026-03-24T23:12:21.757720', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+estimated required memory for 16566 words and 64 dimensions: 16764792 bytes
+resetting layer weights
+Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2026-03-24T23:12:21.846683', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'build_vocab'}
+Word2Vec lifecycle event {'msg': 'training model with 4 workers on 16566 vocabulary and 64 features, using sg=0 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2026-03-24T23:12:21.846881', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+EPOCH 0: training on 148967 raw words (62912 effective words) took 0.0s, 2737405 effective words/s
+EPOCH 1: training on 148967 raw words (62905 effective words) took 0.0s, 2398042 effective words/s
+EPOCH 2: training on 148967 raw words (62880 effective words) took 0.0s, 2817242 effective words/s
+EPOCH 3: training on 148967 raw words (62856 effective words) took 0.0s, 2662034 effective words/s
+EPOCH 4: training on 148967 raw words (62902 effective words) took 0.0s, 2652831 effective words/s
+EPOCH 5: training on 148967 raw words (62891 effective words) took 0.0s, 2390106 effective words/s
+EPOCH 6: training on 148967 raw words (62857 effective words) took 0.0s, 2492254 effective words/s
+EPOCH 7: training on 148967 raw words (62913 effective words) took 0.0s, 2618196 effective words/s
+EPOCH 8: training on 148967 raw words (62856 effective words) took 0.0s, 2706151 effective words/s
+EPOCH 9: training on 148967 raw words (62875 effective words) took 0.0s, 2447503 effective words/s
+Word2Vec lifecycle event {'msg': 'training on 1489670 raw words (628847 effective words) took 0.3s, 2485913 effective words/s', 'datetime': '2026-03-24T23:12:22.099946', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+Word2Vec lifecycle event {'params': 'Word2Vec<vocab=16566, vector_size=64, alpha=0.025>', 'datetime': '2026-03-24T23:12:22.100066', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'created'}
+Training Gensim Skip-Gram | dim = 64, window = 5, neg = 5
+collecting all words and their counts
+PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+collected 16566 word types from a corpus of 148967 raw words and 21 sentences
+Creating a fresh vocabulary
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 retains 16566 unique words (100.00% of original 16566, drops 0)', 'datetime': '2026-03-24T23:12:22.138370', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 leaves 148967 word corpus (100.00% of original 148967, drops 0)', 'datetime': '2026-03-24T23:12:22.138700', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+deleting the raw counts dictionary of 16566 items
+sample=0.001 downsamples 28 most-common words
+Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 143708.4024090274 word corpus (96.5%% of prior 148967)', 'datetime': '2026-03-24T23:12:22.180449', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+estimated required memory for 16566 words and 64 dimensions: 16764792 bytes
+resetting layer weights
+Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2026-03-24T23:12:22.274219', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'build_vocab'}
+Word2Vec lifecycle event {'msg': 'training model with 4 workers on 16566 vocabulary and 64 features, using sg=1 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2026-03-24T23:12:22.274525', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+EPOCH 0: training on 148967 raw words (62912 effective words) took 0.1s, 774000 effective words/s
+EPOCH 1: training on 148967 raw words (62860 effective words) took 0.1s, 787182 effective words/s
+EPOCH 2: training on 148967 raw words (62869 effective words) took 0.1s, 793198 effective words/s
+EPOCH 3: training on 148967 raw words (62879 effective words) took 0.1s, 715335 effective words/s
+EPOCH 4: training on 148967 raw words (62945 effective words) took 0.1s, 806546 effective words/s
+EPOCH 5: training on 148967 raw words (62842 effective words) took 0.1s, 763492 effective words/s
+EPOCH 6: training on 148967 raw words (62910 effective words) took 0.1s, 732108 effective words/s
+EPOCH 7: training on 148967 raw words (62845 effective words) took 0.1s, 797562 effective words/s
+EPOCH 8: training on 148967 raw words (62882 effective words) took 0.1s, 801703 effective words/s
+EPOCH 9: training on 148967 raw words (62862 effective words) took 0.1s, 734753 effective words/s
+Word2Vec lifecycle event {'msg': 'training on 1489670 raw words (628806 effective words) took 0.8s, 759765 effective words/s', 'datetime': '2026-03-24T23:12:23.102241', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+Word2Vec lifecycle event {'params': 'Word2Vec<vocab=16566, vector_size=64, alpha=0.025>', 'datetime': '2026-03-24T23:12:23.102390', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'created'}
+Training Gensim CBOW | dim = 64, window size = 5, negatives = 10
+collecting all words and their counts
+PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+collected 16566 word types from a corpus of 148967 raw words and 21 sentences
+Creating a fresh vocabulary
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 retains 16566 unique words (100.00% of original 16566, drops 0)', 'datetime': '2026-03-24T23:12:23.141081', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 leaves 148967 word corpus (100.00% of original 148967, drops 0)', 'datetime': '2026-03-24T23:12:23.141350', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+deleting the raw counts dictionary of 16566 items
+sample=0.001 downsamples 28 most-common words
+Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 143708.4024090274 word corpus (96.5%% of prior 148967)', 'datetime': '2026-03-24T23:12:23.181155', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+estimated required memory for 16566 words and 64 dimensions: 16764792 bytes
+resetting layer weights
+Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2026-03-24T23:12:23.265882', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'build_vocab'}
+Word2Vec lifecycle event {'msg': 'training model with 4 workers on 16566 vocabulary and 64 features, using sg=0 hs=0 sample=0.001 negative=10 window=5 shrink_windows=True', 'datetime': '2026-03-24T23:12:23.266105', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+EPOCH 0: training on 148967 raw words (62912 effective words) took 0.0s, 1776346 effective words/s
+EPOCH 1: training on 148967 raw words (62860 effective words) took 0.0s, 1912190 effective words/s
+EPOCH 2: training on 148967 raw words (62869 effective words) took 0.0s, 1655744 effective words/s
+EPOCH 3: training on 148967 raw words (62879 effective words) took 0.0s, 1715476 effective words/s
+EPOCH 4: training on 148967 raw words (62901 effective words) took 0.0s, 1951625 effective words/s
+EPOCH 5: training on 148967 raw words (62853 effective words) took 0.0s, 1844638 effective words/s
+EPOCH 6: training on 148967 raw words (62864 effective words) took 0.0s, 1819730 effective words/s
+EPOCH 7: training on 148967 raw words (62872 effective words) took 0.0s, 1895505 effective words/s
+EPOCH 8: training on 148967 raw words (62898 effective words) took 0.0s, 1675138 effective words/s
+EPOCH 9: training on 148967 raw words (62866 effective words) took 0.0s, 1809831 effective words/s
+Word2Vec lifecycle event {'msg': 'training on 1489670 raw words (628774 effective words) took 0.4s, 1747940 effective words/s', 'datetime': '2026-03-24T23:12:23.625902', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+Word2Vec lifecycle event {'params': 'Word2Vec<vocab=16566, vector_size=64, alpha=0.025>', 'datetime': '2026-03-24T23:12:23.625986', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'created'}
+Training Gensim Skip-Gram | dim = 64, window = 5, neg = 10
+collecting all words and their counts
+PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+collected 16566 word types from a corpus of 148967 raw words and 21 sentences
+Creating a fresh vocabulary
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 retains 16566 unique words (100.00% of original 16566, drops 0)', 'datetime': '2026-03-24T23:12:23.668807', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+Word2Vec lifecycle event {'msg': 'effective_min_count=1 leaves 148967 word corpus (100.00% of original 148967, drops 0)', 'datetime': '2026-03-24T23:12:23.669072', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+deleting the raw counts dictionary of 16566 items
+sample=0.001 downsamples 28 most-common words
+Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 143708.4024090274 word corpus (96.5%% of prior 148967)', 'datetime': '2026-03-24T23:12:23.714371', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'prepare_vocab'}
+estimated required memory for 16566 words and 64 dimensions: 16764792 bytes
+resetting layer weights
+Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2026-03-24T23:12:23.806748', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'build_vocab'}
+Word2Vec lifecycle event {'msg': 'training model with 4 workers on 16566 vocabulary and 64 features, using sg=1 hs=0 sample=0.001 negative=10 window=5 shrink_windows=True', 'datetime': '2026-03-24T23:12:23.806939', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+EPOCH 0: training on 148967 raw words (62852 effective words) took 0.1s, 424836 effective words/s
+EPOCH 1: training on 148967 raw words (62928 effective words) took 0.1s, 442661 effective words/s
+EPOCH 2: training on 148967 raw words (62912 effective words) took 0.2s, 376658 effective words/s
+EPOCH 3: training on 148967 raw words (62872 effective words) took 0.2s, 413479 effective words/s
+EPOCH 4: training on 148967 raw words (62881 effective words) took 0.1s, 439473 effective words/s
+EPOCH 5: training on 148967 raw words (62872 effective words) took 0.2s, 381226 effective words/s
+EPOCH 6: training on 148967 raw words (62882 effective words) took 0.1s, 423896 effective words/s
+EPOCH 7: training on 148967 raw words (62865 effective words) took 0.1s, 446088 effective words/s
+EPOCH 8: training on 148967 raw words (62838 effective words) took 0.1s, 450490 effective words/s
+EPOCH 9: training on 148967 raw words (62848 effective words) took 0.2s, 411907 effective words/s
+Word2Vec lifecycle event {'msg': 'training on 1489670 raw words (628750 effective words) took 1.5s, 416249 effective words/s', 'datetime': '2026-03-24T23:12:25.317534', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'train'}
+Word2Vec lifecycle event {'params': 'Word2Vec<vocab=16566, vector_size=64, alpha=0.025>', 'datetime': '2026-03-24T23:12:25.317723', 'gensim': '4.4.0', 'python': '3.11.9 (main, Mar  5 2026, 15:55:07) [GCC 15.2.1 20260209]', 'platform': 'Linux-6.19.9-arch1-1-x86_64-with-glibc2.43', 'event': 'created'}
+GENSIM NEAREST NEIGHBORS
+
+Model: gensim_cbow_32_3_5
+
+Word: research
+departments 0.9951
+industry 0.9934
+academics 0.9932
+schools 0.9925
+also 0.9921
+
+
+Word: student
+cancellation 0.9946
+awarded 0.9904
+registered 0.9899
+register 0.9891
+continue 0.9872
+
+
+Word: phd
+eligible 0.9907
+appeal 0.9900
+qualifying 0.9899
+guidelines 0.9884
+four 0.9878
+
+
+Word: exam
+work 0.9904
+submit 0.9903
+within 0.9893
+evaluated 0.9888
+would 0.9888
+
+
+Model: gensim_skipgram_32_3_5
+
+Word: research
+area 0.9046
+group 0.8758
+designation 0.8748
+outreach 0.8706
+activities 0.8683
+
+
+Word: student
+awarded 0.9062
+eligible 0.8956
+allowed 0.8942
+appeal 0.8915
+card 0.8909
+
+
+Word: phd
+may 0.8597
+inspire 0.8532
+supervision 0.8336
+shikha 0.8136
+concerned 0.8118
+
+
+Word: exam
+issued 0.9921
+break 0.9904
+exceed 0.9899
+bonafide 0.9898
+admissible 0.9888
+
+
+Model: gensim_cbow_32_3_10
+
+Word: research
+established 0.9805
+abroad 0.9792
+outside 0.9781
+nominated 0.9774
+chairman 0.9772
+
+
+Word: student
+shall 0.9733
+may 0.9659
+register 0.9632
+academic 0.9628
+advise 0.9573
+
+
+Word: phd
+termination 0.9890
+appeal 0.9839
+terminated 0.9824
+already 0.9816
+regular 0.9804
+
+
+Word: exam
+candidate 0.9968
+satisfactory 0.9967
+every 0.9966
+case 0.9964
+qualiﬁer 0.9963
+
+
+Model: gensim_skipgram_32_3_10
+
+Word: research
+area 0.9090
+projects 0.8763
+group 0.8752
+designation 0.8694
+activities 0.8683
+
+
+Word: student
+allowed 0.8571
+awarded 0.8558
+concerned 0.8553
+shortlisted 0.8548
+permitted 0.8528
+
+
+Word: phd
+inspire 0.8527
+supervision 0.8351
+may 0.8069
+dst 0.8004
+alumni 0.7981
+
+
+Word: exam
+submitting 0.9894
+exceed 0.9885
+entrance 0.9879
+continue 0.9877
+discouraged 0.9871
+
+
+Model: gensim_cbow_32_5_5
+
+Word: research
+departments 0.9931
+secretary 0.9893
+achievements 0.9883
+appointed 0.9877
+outside 0.9857
+
+
+Word: student
+cancellation 0.9967
+shall 0.9941
+register 0.9928
+normally 0.9928
+registration 0.9927
+
+
+Word: phd
+completes 0.9829
+appeal 0.9821
+academics 0.9798
+recommend 0.9797
+must 0.9793
+
+
+Word: exam
+submit 0.9923
+work 0.9914
+within 0.9905
+successful 0.9905
+would 0.9902
+
+
+Model: gensim_skipgram_32_5_5
+
+Word: research
+area 0.9341
+ongoing 0.9045
+projects 0.8941
+activities 0.8907
+training 0.8863
+
+
+Word: student
+awarded 0.8593
+allowed 0.8533
+concerned 0.8489
+transcript 0.8480
+exceptional 0.8473
+
+
+Word: phd
+inspire 0.8146
+abhijeet 0.8027
+ravikant 0.8000
+mantor 0.7898
+biswajit 0.7800
+
+
+Word: exam
+automatic 0.9884
+withdraws 0.9880
+transmitting 0.9863
+submitting 0.9854
+result 0.9847
+
+
+Model: gensim_cbow_32_5_10
+
+Word: research
+laboratories 0.9782
+repute 0.9748
+recognized 0.9722
+departments 0.9702
+academics 0.9644
+
+
+Word: student
+shall 0.9811
+registration 0.9792
+register 0.9787
+academic 0.9701
+spend 0.9685
+
+
+Word: phd
+continue 0.9777
+found 0.9774
+recommend 0.9768
+appeal 0.9765
+governors 0.9744
+
+
+Word: exam
+missed 0.9974
+additional 0.9959
+ﬁrst 0.9958
+incomplete 0.9957
+unsatisfactory 0.9955
+
+
+Model: gensim_skipgram_32_5_10
+
+Word: research
+area 0.9253
+groups 0.8918
+presentation 0.8877
+areas 0.8861
+ecosystem 0.8840
+
+
+Word: student
+may 0.7955
+transcript 0.7854
+attendance 0.7787
+exceptional 0.7776
+falls 0.7763
+
+
+Word: phd
+inspire 0.7939
+cse 0.7742
+supervision 0.7569
+dst 0.7559
+jyoti 0.7552
+
+
+Word: exam
+automatic 0.9887
+submitting 0.9847
+holidays 0.9823
+result 0.9822
+middle 0.9817
+
+
+Model: gensim_cbow_64_3_5
+
+Word: research
+member 0.9944
+outside 0.9941
+meeting 0.9938
+recruitment 0.9935
+iitj 0.9934
+
+
+Word: student
+cancellation 0.9952
+registered 0.9935
+register 0.9931
+registration 0.9925
+fails 0.9925
+
+
+Word: phd
+joining 0.9919
+non 0.9917
+eligible 0.9915
+appeal 0.9910
+qualifying 0.9908
+
+
+Word: exam
+documents 0.9937
+successful 0.9925
+semesters 0.9923
+given 0.9922
+equivalent 0.9922
+
+
+Model: gensim_skipgram_64_3_5
+
+Word: research
+area 0.9108
+staff 0.9042
+group 0.8951
+outreach 0.8915
+designation 0.8889
+
+
+Word: student
+allowed 0.8929
+waiver 0.8923
+appeal 0.8895
+granted 0.8891
+permitted 0.8878
+
+
+Word: phd
+inspire 0.8597
+dcs 0.8345
+terminated 0.8246
+shikha 0.8240
+supervision 0.8176
+
+
+Word: exam
+exceed 0.9926
+discouraged 0.9917
+stand 0.9914
+official 0.9908
+casual 0.9901
+
+
+Model: gensim_cbow_64_3_10
+
+Word: research
+outside 0.9906
+meeting 0.9904
+abroad 0.9892
+member 0.9889
+director 0.9884
+
+
+Word: student
+academic 0.9685
+shall 0.9653
+register 0.9624
+registration 0.9569
+awarded 0.9536
+
+
+Word: phd
+terminated 0.9901
+examine 0.9890
+full 0.9854
+regular 0.9845
+termination 0.9843
+
+
+Word: exam
+break 0.9977
+provisionally 0.9977
+provided 0.9976
+satisfactory 0.9976
+campus 0.9976
+
+
+Model: gensim_skipgram_64_3_10
+
+Word: research
+area 0.9079
+projects 0.8841
+training 0.8839
+areas 0.8820
+group 0.8733
+
+
+Word: student
+students 0.8198
+allowed 0.8010
+awarded 0.7968
+granted 0.7939
+waiver 0.7893
+
+
+Word: phd
+inspire 0.8564
+supervision 0.8290
+alumni 0.7993
+mtech 0.7949
+terminated 0.7945
+
+
+Word: exam
+exceed 0.9920
+deficient 0.9897
+stand 0.9895
+continue 0.9876
+admissible 0.9872
+
+
+Model: gensim_cbow_64_5_5
+
+Word: research
+meeting 0.9958
+departments 0.9951
+member 0.9919
+people 0.9897
+achievements 0.9892
+
+
+Word: student
+cancellation 0.9960
+register 0.9953
+registered 0.9947
+normally 0.9942
+academic 0.9936
+
+
+Word: phd
+appeal 0.9934
+period 0.9911
+qualifying 0.9908
+degrees 0.9902
+leave 0.9901
+
+
+Word: exam
+work 0.9941
+given 0.9939
+return 0.9939
+would 0.9937
+break 0.9936
+
+
+Model: gensim_skipgram_64_5_5
+
+Word: research
+area 0.9322
+activities 0.8989
+training 0.8979
+ongoing 0.8979
+academia 0.8961
+
+
+Word: student
+awarded 0.8186
+may 0.8077
+transcript 0.8045
+otherwise 0.8040
+temporarily 0.8031
+
+
+Word: phd
+inspire 0.8043
+bikram 0.7784
+abhijeet 0.7675
+dst 0.7619
+mantor 0.7580
+
+
+Word: exam
+automatic 0.9899
+submitting 0.9895
+bonafide 0.9874
+withdraw 0.9874
+deficient 0.9873
+
+
+Model: gensim_cbow_64_5_10
+
+Word: research
+repute 0.9800
+recognized 0.9788
+laboratories 0.9759
+abroad 0.9724
+staff 0.9716
+
+
+Word: student
+academic 0.9834
+shall 0.9816
+register 0.9805
+registration 0.9771
+passed 0.9768
+
+
+Word: phd
+appeal 0.9883
+must 0.9849
+eligibility 0.9849
+eligible 0.9840
+normally 0.9838
+
+
+Word: exam
+provided 0.9968
+option 0.9966
+exceed 0.9964
+indicates 0.9963
+fees 0.9958
+
+
+Model: gensim_skipgram_64_5_10
+
+Word: research
+area 0.9049
+training 0.8710
+ongoing 0.8702
+presentation 0.8670
+groups 0.8661
+
+
+Word: student
+may 0.7860
+waiver 0.7819
+granted 0.7790
+permitted 0.7778
+recommendation 0.7756
+
+
+Word: phd
+inspire 0.8088
+supervision 0.7527
+dst 0.7395
+mantor 0.7342
+mentor 0.7263
+
+
+Word: exam
+automatic 0.9853
+result 0.9812
+submitting 0.9808
+sixteen 0.9803
+seek 0.9797
+
+GENSIM ANALOGY
+
+Model: gensim_cbow_32_3_5
+
+undergraduate : btech :: postgraduate : ?
+grand 0.8931
+requisite 0.8898
+list 0.8866
+selected 0.8834
+concerned 0.8829
+
+btech : student :: phd : ?
+calendar 0.9174
+november 0.9128
+takes 0.9122
+absence 0.9098
+may 0.9083
+
+research : faculty :: student : ?
+carry 0.9392
+hold 0.9286
+earns 0.9280
+cancellation 0.9266
+shall 0.9263
+
+course : exam :: research : ?
+speaker 0.9495
+fellow 0.9440
+neha 0.9437
+calibration 0.9434
+indranil 0.9433
+
+
+Model: gensim_skipgram_32_3_5
+
+undergraduate : btech :: postgraduate : ?
+giving 0.9626
+background 0.9615
+message 0.9611
+hosted 0.9565
+aim 0.9558
+
+btech : student :: phd : ?
+may 0.8316
+inspire 0.7531
+award 0.7068
+dst 0.6979
+supervision 0.6887
+
+research : faculty :: student : ?
+associated 0.7871
+letter 0.7731
+awarded 0.7685
+card 0.7659
+inspire 0.7602
+
+course : exam :: research : ?
+office 0.8507
+outreach 0.8419
+administration 0.8372
+article 0.8329
+recruitment 0.8246
+
+
+Model: gensim_cbow_32_3_10
+
+undergraduate : btech :: postgraduate : ?
+parallelism 0.9450
+assignment 0.9445
+provide 0.9443
+php 0.9442
+introduce 0.9424
+
+btech : student :: phd : ?
+academic 0.8841
+may 0.8721
+shall 0.8668
+examine 0.8603
+registration 0.8465
+
+research : faculty :: student : ?
+shall 0.8928
+may 0.8747
+deem 0.8603
+academic 0.8580
+floated 0.8514
+
+course : exam :: research : ?
+india 0.9416
+repute 0.9296
+chosen 0.9295
+comments 0.9250
+abroad 0.9232
+
+
+Model: gensim_skipgram_32_3_10
+
+undergraduate : btech :: postgraduate : ?
+aim 0.9688
+message 0.9629
+resources 0.9615
+vlsi 0.9603
+giving 0.9600
+
+btech : student :: phd : ?
+may 0.8004
+inspire 0.6992
+award 0.6630
+dst 0.6571
+allowed 0.6334
+
+research : faculty :: student : ?
+associated 0.7094
+letter 0.6865
+awarded 0.6794
+card 0.6768
+inspire 0.6702
+
+course : exam :: research : ?
+achievements 0.8287
+area 0.8232
+outreach 0.8219
+designation 0.8120
+article 0.8101
+
+
+Model: gensim_cbow_32_5_5
+
+undergraduate : btech :: postgraduate : ?
+details 0.9354
+requisite 0.9354
+reverse 0.9327
+background 0.9300
+total 0.9288
+
+btech : student :: phd : ?
+institutes 0.9326
+proceeding 0.9261
+proceed 0.9258
+april 0.9218
+may 0.9198
+
+research : faculty :: student : ?
+shall 0.9519
+consisting 0.9494
+nominated 0.9492
+adding 0.9486
+approved 0.9480
+
+course : exam :: research : ?
+proposal 0.9486
+translational 0.9484
+poster 0.9444
+patel 0.9420
+aligned 0.9399
+
+
+Model: gensim_skipgram_32_5_5
+
+undergraduate : btech :: postgraduate : ?
+mtech 0.9598
+message 0.9461
+details 0.9440
+hosted 0.9438
+msc 0.9428
+
+btech : student :: phd : ?
+may 0.7891
+inspire 0.7108
+mhrd 0.7056
+mantor 0.6913
+fellowship 0.6913
+
+research : faculty :: student : ?
+associated 0.6936
+audited 0.6727
+offering 0.6716
+awarded 0.6695
+may 0.6652
+
+course : exam :: research : ?
+administration 0.8358
+facility 0.8309
+outreach 0.8198
+idrcs 0.8156
+proposal 0.8131
+
+
+Model: gensim_cbow_32_5_10
+
+undergraduate : btech :: postgraduate : ?
+requisite 0.9516
+details 0.9496
+objective 0.9446
+iml 0.9441
+topics 0.9385
+
+btech : student :: phd : ?
+may 0.9345
+faujdar 0.9149
+leave 0.8984
+spend 0.8971
+shall 0.8969
+
+research : faculty :: student : ?
+shall 0.9360
+may 0.9327
+consisting 0.9193
+submits 0.9163
+approved 0.9133
+
+course : exam :: research : ?
+india 0.9549
+comments 0.9397
+conclave 0.9331
+donations 0.9289
+repute 0.9286
+
+
+Model: gensim_skipgram_32_5_10
+
+undergraduate : btech :: postgraduate : ?
+message 0.9412
+incubation 0.9403
+mdes 0.9399
+flexibility 0.9397
+hosted 0.9392
+
+btech : student :: phd : ?
+may 0.6914
+cohort 0.6586
+mentor 0.6206
+inspire 0.6101
+dst 0.6037
+
+research : faculty :: student : ?
+letter 0.6501
+audited 0.6387
+offering 0.6379
+wishes 0.6307
+card 0.6283
+
+course : exam :: research : ?
+defense 0.8312
+got 0.8282
+paper 0.8271
+examiner 0.8268
+facility 0.8229
+
+
+Model: gensim_cbow_64_3_5
+
+undergraduate : btech :: postgraduate : ?
+aims 0.9035
+requisite 0.8990
+objective 0.8969
+description 0.8912
+pre 0.8912
+
+btech : student :: phd : ?
+declared 0.8972
+unable 0.8972
+parents 0.8968
+deficient 0.8956
+advise 0.8925
+
+research : faculty :: student : ?
+shall 0.9640
+academic 0.9593
+semester 0.9581
+fails 0.9557
+register 0.9554
+
+course : exam :: research : ?
+inspire 0.9485
+dst 0.9387
+proposal 0.9361
+neha 0.9358
+abroad 0.9354
+
+
+Model: gensim_skipgram_64_3_5
+
+undergraduate : btech :: postgraduate : ?
+incentive 0.9700
+giving 0.9699
+aim 0.9690
+mba 0.9684
+hosted 0.9675
+
+btech : student :: phd : ?
+may 0.8072
+inspire 0.7479
+award 0.7438
+fellowship 0.6941
+bog 0.6831
+
+research : faculty :: student : ?
+may 0.7727
+associated 0.7681
+approval 0.7662
+permission 0.7598
+request 0.7580
+
+course : exam :: research : ?
+scholars 0.8374
+outreach 0.8328
+achievements 0.8255
+alumni 0.8248
+article 0.8237
+
+
+Model: gensim_cbow_64_3_10
+
+undergraduate : btech :: postgraduate : ?
+assistance 0.9719
+aims 0.9718
+curriculum 0.9706
+sse 0.9705
+added 0.9696
+
+btech : student :: phd : ?
+academic 0.9081
+shall 0.8878
+registration 0.8811
+register 0.8719
+may 0.8668
+
+research : faculty :: student : ?
+shall 0.9103
+academic 0.8985
+semester 0.8848
+register 0.8691
+running 0.8657
+
+course : exam :: research : ?
+dst 0.9370
+india 0.9318
+soumava 0.9281
+restructuring 0.9276
+sasmal 0.9273
+
+
+Model: gensim_skipgram_64_3_10
+
+undergraduate : btech :: postgraduate : ?
+hosted 0.9752
+discontinued 0.9741
+accelerated 0.9710
+giving 0.9706
+profession 0.9686
+
+btech : student :: phd : ?
+inspire 0.6897
+may 0.6860
+award 0.6335
+dst 0.6267
+fellowship 0.5646
+
+research : faculty :: student : ?
+associated 0.6379
+inspire 0.6326
+phd 0.6194
+supervision 0.6022
+scholars 0.5972
+
+course : exam :: research : ?
+achievements 0.8045
+outreach 0.7950
+area 0.7944
+alumni 0.7943
+scholars 0.7938
+
+
+Model: gensim_cbow_64_5_5
+
+undergraduate : btech :: postgraduate : ?
+curriculum 0.9475
+requisite 0.9469
+aims 0.9440
+objective 0.9427
+background 0.9427
+
+btech : student :: phd : ?
+examine 0.9376
+unable 0.9316
+proceed 0.9308
+calendar 0.9258
+deficient 0.9245
+
+research : faculty :: student : ?
+names 0.9709
+shall 0.9687
+residence 0.9664
+approved 0.9642
+consisting 0.9632
+
+course : exam :: research : ?
+translational 0.9534
+inspire 0.9518
+addressed 0.9490
+jjm 0.9437
+government 0.9426
+
+
+Model: gensim_skipgram_64_5_5
+
+undergraduate : btech :: postgraduate : ?
+iii 0.9625
+encourage 0.9584
+background 0.9574
+covered 0.9533
+incubation 0.9524
+
+btech : student :: phd : ?
+may 0.7432
+mhrd 0.6680
+inspire 0.6621
+mantor 0.6464
+mentor 0.6438
+
+research : faculty :: student : ?
+may 0.6765
+associated 0.6481
+audited 0.6434
+offering 0.6419
+date 0.6380
+
+course : exam :: research : ?
+scholars 0.8300
+academia 0.8238
+include 0.8205
+assistantship 0.8184
+national 0.8176
+
+
+Model: gensim_cbow_64_5_10
+
+undergraduate : btech :: postgraduate : ?
+requisite 0.9543
+objective 0.9522
+csp 0.9459
+electives 0.9459
+offers 0.9457
+
+btech : student :: phd : ?
+registration 0.9185
+spend 0.9178
+passed 0.9178
+advice 0.9173
+calendar 0.9140
+
+research : faculty :: student : ?
+shall 0.9610
+may 0.9525
+semester 0.9443
+registration 0.9383
+academic 0.9345
+
+course : exam :: research : ?
+india 0.9427
+equipped 0.9360
+repository 0.9358
+comments 0.9343
+donations 0.9317
+
+
+Model: gensim_skipgram_64_5_10
+
+undergraduate : btech :: postgraduate : ?
+message 0.9482
+mtech 0.9461
+css 0.9416
+flexibility 0.9413
+incubation 0.9406
+
+btech : student :: phd : ?
+may 0.6611
+inspire 0.6031
+mhrd 0.6020
+mantor 0.5888
+mentor 0.5771
+
+research : faculty :: student : ?
+may 0.5848
+offering 0.5847
+awarded 0.5846
+authority 0.5827
+supervision 0.5822
+
+course : exam :: research : ?
+assistantship 0.8213
+proposal 0.8037
+scholars 0.7987
+include 0.7948
+duties 0.7927
+
